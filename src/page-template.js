@@ -1,13 +1,13 @@
 module.exports= templateData => {
 
-    const { github, email, name, repolink, description, installation, usage, credits, test, ...licenses} = templateData;
+    const { github, email, name, repolink, description, installation, usage, credits, tests, ...licenses} = templateData;
 
-    if(licenses.licenses === 'ApacheLicense_2') {
-        licenses.licenses === './src/ApacheLicense_2.txt';
-    } else if (licenses.licenses === 'GNU_GPLv3') {
-        licenses.licenses === './src/GNU_GPLv3.txt';
-    } else if (licenses.licenses === 'MIT_License') {
-        licenses.licenses === './src/MIT_License.txt';
+    if(licenses === 'ApacheLicense 2') {
+        licenses === './src/ApacheLicense_2.txt';
+    } else if (licenses === 'GNU GPLv3') {
+        licenses === './src/GNU_GPLv3.txt';
+    } else if (licenses === 'MIT License') {
+        licenses === './src/MIT_License.txt';
     }
     
     return `
@@ -23,11 +23,11 @@ ${templateData.description}
 [Usage](#usage)<br>
 [Credits](#credits)<br>
 [Tests](#tests)<br>
-[License](#licenses)<br>
+[Licenses](#licenses)<br>
 [Questions](#question)<br>
 ***
 ## Installation
-${templateData.installationInstructions}
+${templateData.installation}
 
 ## Usage
 ${templateData.usage}
@@ -36,21 +36,22 @@ ${templateData.usage}
 ${templateData.credits}
 
 ## Tests
-${templateData.testInput}
+${templateData.tests}
 
 ## Questions :question:
 For further questions on this project or future collaboration contact me at:<br>
 * GitHub: ${templateData.github}
+* Repository link: ${templateData.repolink}
 * Email: ${templateData.email}
 
 ## License
 ### This license is covered under the ${templateData.licenses} license(s):
-* Click ${templateData.licenses} for more information.
+* Click ${licenses} for more information.
 ***
 
 
 ## Footer
-Created by: ${templateData.github}.<br>\
+Created by: ${templateData.github} <br>
 :copyright: ${new Date().getFullYear()}
 `;
 };

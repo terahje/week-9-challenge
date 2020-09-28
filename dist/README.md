@@ -1,7 +1,7 @@
 
 # Week-9-Challenge
 
-![licenses](https://img.shields.io/badge/License-MIT_License-blue.svg)
+![licenses](https://img.shields.io/badge/License-MIT License-blue.svg)
 
 ## Description
 Generates a professional README.md via Node.js to help developers speed up the process while maintaining high standards.
@@ -11,31 +11,33 @@ Generates a professional README.md via Node.js to help developers speed up the p
 [Usage](#usage)<br>
 [Credits](#credits)<br>
 [Tests](#tests)<br>
-[License](#licenses)<br>
+[Licenses](#licenses)<br>
 [Questions](#question)<br>
 ***
 ## Installation
-undefined
+install node.js and npm installer first
 
 ## Usage
-generates readme to dramatically reduce time spent on quality readme file
+to be determined
 
 ## Credits
 undefined
 
 ## Tests
-undefined
+testing after i know this works
 
 ## Questions :question:
 For further questions on this project or future collaboration contact me at:<br>
 * GitHub: terahje
+* Repository link: https://github.com/terahje/week-9-challenge
 * Email: terahjequinn@gmail.com
 
 ## License
-### This license is covered under the MIT_License license(s):
-* Click MIT_License for more information.
+### This license is covered under the MIT License license(s):
+* Click [object Object] for more information.
 ***
 
 
 ## Footer
-Created by: terahje.<br>:copyright: 2020
+Created by: terahje <br>
+:copyright: 2020
