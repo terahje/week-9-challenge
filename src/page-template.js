@@ -1,13 +1,13 @@
 module.exports= templateData => {
 
-    const { github, email, name, repolink, description, installation, usage, credits, tests, ...licenses} = templateData;
+    const { github, email, name, repolink, description, installation, usage, credits, tests, ...license} = templateData;
 
-    if(licenses === 'ApacheLicense 2') {
-        licenses === './src/ApacheLicense_2.txt';
-    } else if (licenses === 'GNU GPLv3') {
-        licenses === './src/GNU_GPLv3.txt';
-    } else if (licenses === 'MIT License') {
-        licenses === './src/MIT_License.txt';
+    if(license.licenses === 'ApacheLicense_2') {
+        license.licenses === './src/ApacheLicense_2.txt';
+    } else if (license.licenses === 'GNU_GPLv3') {
+        license.licenses === './src/GNU_GPLv3.txt';
+    } else if (license.licenses === 'MIT_License') {
+        license.licenses === './src/MIT_License.txt';
     }
     
     return `
@@ -41,17 +41,16 @@ ${templateData.tests}
 ## Questions :question:
 For further questions on this project or future collaboration contact me at:<br>
 * GitHub: ${templateData.github}
-* Repository link: ${templateData.repolink}
 * Email: ${templateData.email}
+* Repository link: ${templateData.repolink}
 
 ## License
-### This license is covered under the ${templateData.licenses} license(s):
-* Click ${licenses} for more information.
+### This license is covered under the following license(s):
+* Click ${license.licenses} for more information.
 ***
 
 
 ## Footer
-Created by: ${templateData.github} <br>
-:copyright: ${new Date().getFullYear()}
+* Created by: ${templateData.github} :copyright: ${new Date().getFullYear()}
 `;
 };

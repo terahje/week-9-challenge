@@ -1,41 +1,42 @@
 # Week-9-Challenge
 
-   ![licenses](https://img.shields.io/badge/License-MIT_License-blue.svg)
+![licenses](https://img.shields.io/badge/License-MIT_License-blue.svg)
 
 ## Description
-    Generates a professional README.md via Node.js to help developers speed up the process while maintaining high standards.
- 
+Generates a professional README.md via Node.js to help developers speed up the process while maintaining high standards.
+***
 ## Table of Contents
-    [Installation](#installation)<br>
-    [Usage](#usage)<br>
-    [Credits](#credits)<br>
-    [Tests](#tests)<br>
-    [License](#licenses)<br>
-    [Questions](#question)<br>
-
+[Installation](#installation)<br>
+[Usage](#usage)<br>
+[Credits](#credits)<br>
+[Tests](#tests)<br>
+[Licenses](#licenses)<br>
+[Questions](#question)<br>
+***
 ## Installation
-    undefined
+install node.js and npm installer first. After download or clone of file, run index.js and follow prompts.
 
 ## Usage
-    undefined
+Generates readme to dramatically reduce time spent on quality readme file
 
 ## Credits
-    undefined
+None at this moment
 
 ## Tests
-    undefined
+testing is ongoing
+(https://drive.google.com/file/d/12la6MPt50arEhAoFiA64ZNVK-ARn6oqY/view)
 
 ## Questions :question:
-    For further questions on this project or future collaboration contact me at:<br>
-    * GitHub: terahje
-    * Email: terahjequinn@gmail.com
+For further questions on this project or future collaboration contact me at:<br>
+* GitHub: terahje
+* Email: terahjequinn@gmail.com
+* Repository link: https://github.com/terahje/week-9-challenge
 
 ## License
-### This license is covered under the MIT_License license(s):
-   * Click MIT_License for more information.
- ***
+### This license is covered under the following license(s):
+* Click MIT_License for more information.
+***
 
 
 ## Footer
-    Created by: terahje.<br>    :copyright: 2020
-    
+* Created by: terahje :copyright: 2020

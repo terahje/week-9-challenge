@@ -132,7 +132,7 @@ const promptUser = () => {
             type: 'checkbox',
             name: 'licenses',
             message: 'Choose your license type: (Choose One)',
-            choices: ['MIT License', 'GNU GPLv3', 'ApacheLicense 2.0'],
+            choices: ['MIT_License', 'GNU_GPLv3', 'ApacheLicense_2.0'],
             validate: licensesCheck => {
                 if(licensesCheck > 1) {
                     return 'Only choose one option'
