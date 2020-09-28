@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const generateReadme = require('./src/page-template.js');
+const generatePage = require('./src/page-template.js');
 
 const fs = require('fs');
 
@@ -50,7 +50,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'repolink',
-            message: 'Please provide link to repository (Required)',
+            message: 'Please provide link to your repository (Required)',
             validate: repoLink => {
                 if (repoLink) {
                     return true;
@@ -88,7 +88,7 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'information',
+            name: 'usage',
             message: 'Please enter usage information for your project (Required)',
             validate: usageINfo => {
                 if (usageINfo) {
@@ -133,7 +133,14 @@ const promptUser = () => {
         {
             type: 'checkbox',
             name: 'licenses',
-            choices: ['MIT_License', 'GNU_GPLv3', 'ApacheLicense_2.0']
+            message: 'Choose your license type: (Choose One)',
+            choices: ['MIT_License', 'GNU_GPLv3', 'ApacheLicense_2.0'],
+            validate: licensesCheck => {
+                if(licensesCheck > 1) {
+                    return 'Only choose one option'
+                }
+                return true;
+            }
         },
         {
             type: 'confirm',
@@ -142,15 +149,14 @@ const promptUser = () => {
             default: false
         }
     ])
-.then(newReadme => {
-        readmeData.push(newReadme);
+};    
 
-        const readmeFile = generateReadme(newReadme);
+promptUser()
+    .then(readmeData => {
+        const pageMarkdown = generatePage(readmeData);
 
-        fs.writeFile('./dist/README.md', readmeFile, err => {
+        fs.writeFile('./dist/README.md', pageMarkdown, err => {
             if(err) throw new Error(err);
             console.log('Readme file created!');
-        })  
     });
-};          
-promptUser();
+});

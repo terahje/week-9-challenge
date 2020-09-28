@@ -1,56 +1,56 @@
-const generateReadme = readmeProfile => {
+module.exports= templateData => {
 
-    if(readmeProfile.licenses === 'ApacheLicense_2') {
-        readmeProfile.licenses === './src/ApacheLicense_2.txt';
-    } else if (readmeProfile.licenses === 'GNU_GPLv3') {
-        readmeProfile.licenses === './src/GNU_GPLv3.txt';
-    } else if (readmeProfile.licenses === 'MIT_License') {
-        readmeProfile.licenses === './src/MIT_License.txt';
+    const { github, email, name, repolink, description, installation, usage, credits, test, ...licenses} = templateData;
+
+    if(licenses.licenses === 'ApacheLicense_2') {
+        licenses.licenses === './src/ApacheLicense_2.txt';
+    } else if (licenses.licenses === 'GNU_GPLv3') {
+        licenses.licenses === './src/GNU_GPLv3.txt';
+    } else if (licenses.licenses === 'MIT_License') {
+        licenses.licenses === './src/MIT_License.txt';
     }
     
     return `
-    # ${readmeProfile.title}
+# ${templateData.title}
 
-   ![licenses](https://img.shields.io/badge/License-${readmeProfile.licenses}-blue.svg)
+![licenses](https://img.shields.io/badge/License-${templateData.licenses}-blue.svg)
 
-    ## Description
-    ${readmeProfile.description}
-    ***
-    ## Table of Contents
-    [Installation](#installation)<br>
-    [Usage](#usage)<br>
-    [Credits](#credits)<br>
-    [Tests](#tests)<br>
-    [License](#licenses)<br>
-    [Questions](#question)<br>
-    ***
-    ## Installation
-    ${readmeProfile.installationInstructions}
+## Description
+${templateData.description}
+***
+## Table of Contents
+[Installation](#installation)<br>
+[Usage](#usage)<br>
+[Credits](#credits)<br>
+[Tests](#tests)<br>
+[License](#licenses)<br>
+[Questions](#question)<br>
+***
+## Installation
+${templateData.installationInstructions}
 
-    ## Usage
-    ${readmeProfile.usage}
+## Usage
+${templateData.usage}
 
-    ## Credits
-    ${readmeProfile.credits}
+## Credits
+${templateData.credits}
 
-    ## Tests
-    ${readmeProfile.testInstructions}
+## Tests
+${templateData.testInput}
 
-    ## Questions :question:
-    For further questions on this project or future collaboration contact me at:<br>
-    * GitHub: ${readmeProfile.github}
-    * Email: ${readmeProfile.email}
+## Questions :question:
+For further questions on this project or future collaboration contact me at:<br>
+* GitHub: ${templateData.github}
+* Email: ${templateData.email}
 
-    ## License
-    ### This license is covered under the ${readmeProfile.licenses} license(s):
-    * Click ${readmeProfile.licenses} for more information.
-    ***
+## License
+### This license is covered under the ${templateData.licenses} license(s):
+* Click ${templateData.licenses} for more information.
+***
 
 
-    ## Footer
-    Created by: ${readmeProfile.github}.<br>\
-    :copyright: ${new Date().getFullYear()}
-    `;
+## Footer
+Created by: ${templateData.github}.<br>\
+:copyright: ${new Date().getFullYear()}
+`;
 };
-
-module.exports = generateReadme;
