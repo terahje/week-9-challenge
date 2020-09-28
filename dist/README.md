@@ -11,7 +11,7 @@ Generates a professional README.md via Node.js to help developers speed up the p
 [Usage](#usage)<br>
 [Credits](#credits)<br>
 [Tests](#tests)<br>
-[Licenses](#licenses)<br>
+[License](#license)<br>
 [Questions](#question)<br>
 ***
 ## Installation
@@ -21,7 +21,7 @@ install node.js and npm installer first. After download or clone of file, run in
 Generates readme to dramatically reduce time spent on quality readme file
 
 ## Credits
-None at this moment
+None at this moment.
 
 ## Tests
 testing is ongoing

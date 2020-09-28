@@ -23,7 +23,7 @@ ${templateData.description}
 [Usage](#usage)<br>
 [Credits](#credits)<br>
 [Tests](#tests)<br>
-[Licenses](#licenses)<br>
+[License](#license)<br>
 [Questions](#question)<br>
 ***
 ## Installation

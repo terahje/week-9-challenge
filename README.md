@@ -10,8 +10,8 @@ Generates a professional README.md via Node.js to help developers speed up the p
 [Usage](#usage)<br>
 [Credits](#credits)<br>
 [Tests](#tests)<br>
-[Licenses](#licenses)<br>
-[Questions](#question)<br>
+[License](#license)<br>
+[Questions](#questions)<br>
 ***
 ## Installation
 install node.js and npm installer first. After download or clone of file, run index.js and follow prompts.
