@@ -36,7 +36,7 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'name',
+            name: 'title',
             message: 'What is the name of your project? (Required)', 
             validate: projectName => {
                 if (projectName) {
@@ -147,7 +147,7 @@ const promptUser = () => {
 
         const readmeFile = generateReadme(newReadme);
 
-        fs.writeFile('README.md', readmeFile, err => {
+        fs.writeFile('./dist/README.md', readmeFile, err => {
             if(err) throw new Error(err);
             console.log('Readme file created!');
         })  
